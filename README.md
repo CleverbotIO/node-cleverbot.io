@@ -5,7 +5,7 @@ To install this package, simply enter the following in your console
     npm install --save cleverbot.io
   Note: It is a good practice to include *--save* to add this to your dependencies in your package.json
   
-Before using this module, please get your API keys at http://cleverbot.io/keys
+Before using this module, please get your API keys at [http://cleverbot.io/keys](http://cleverbot.io/keys)
 
 To initialize cleverbot, require the module, then create a new instance of cleverbot
 
@@ -33,4 +33,4 @@ Now querying cleverbot is simple, you pass the text to the *.ask()* method
     
 Well, that's it for now!  Happy hacking!
 
-######Cleverbot.io is free and open source, and will remain so.
+**Cleverbot.io is free and open source, and will remain so.**
