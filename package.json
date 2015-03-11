@@ -1,0 +1,22 @@
+{
+  "name": "cleverbot.io",
+  "version": "0.0.0",
+  "description": "A node.js client for cleverbot.io",
+  "main": "app.js",
+  "scripts": {
+    "test": "node example.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cleverbotIO/node-cleverbot.io"
+  },
+  "author": "David Tesler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cleverbotIO/node-cleverbot.io/issues"
+  },
+  "homepage": "https://github.com/cleverbotIO/node-cleverbot.io",
+  "dependencies": {
+    "request": "^2.53.0"
+  }
+}
