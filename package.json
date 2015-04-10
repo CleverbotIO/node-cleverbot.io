@@ -1,10 +1,10 @@
 {
   "name": "cleverbot.io",
-  "version": "0.0.2",
+  "version": "1.0.3",
   "description": "A node.js client for cleverbot.io",
   "main": "app.js",
   "scripts": {
-    "test": "node example.js"
+    "test": "mocha app"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,18 @@
   "dependencies": {
     "request": "^2.53.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "_shasum": "59e7d9ccb1ffb912ae8af7ace9c4150b1f13568d",
+  "_from": "cleverbot.io@",
+  "keywords": [
+    "cleverbot",
+    "developers",
+    "cloud",
+    "based",
+    "official",
+    "track",
+    "open",
+    "source",
+	"api"
+  ]
 }
