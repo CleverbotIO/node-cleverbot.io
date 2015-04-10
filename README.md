@@ -1,9 +1,9 @@
 # cleverbot.io
 
 [![npm status](http://img.shields.io/npm/v/cleverbot.io.svg)](https://www.npmjs.org/package/cleverbot.io)
-[![build status](https://secure.travis-ci.org/clux/cleverbot.io.svg)](http://travis-ci.org/clux/cleverbot.io)
-[![dependency status](https://david-dm.org/clux/cleverbot.io.svg)](https://david-dm.org/clux/cleverbot.io)
-[![coverage status](http://img.shields.io/coveralls/clux/cleverbot.io.svg)](https://coveralls.io/r/clux/cleverbot.io)
+[![build status](https://secure.travis-ci.org/CleverbotIO/node-cleverbot.io.svg)](http://travis-ci.org/CleverbotIO/node-cleverbot.io)
+[![dependency status](https://david-dm.org/CleverbotIO/node-cleverbot.io.svg)](https://david-dm.org/CleverbotIO/node-cleverbot.io)
+[![coverage status](http://img.shields.io/coveralls/CleverbotIO/node-cleverbot.io.svg)](https://coveralls.io/r/CleverbotIO/node-cleverbot.io)
 
 To install this package, simply enter the following in your console
 
