@@ -17,7 +17,7 @@ var cio = function (user, key) {
 					this.nick = JSON.parse(body).nick;
 					callback(false, this.nick);					
 				}
-				if (JSON.parse(body).status == "Error: reference name already exists") {
+				else if (JSON.parse(body).status == "Error: reference name already exists") {
 					callback(false, this.nick);					
 				}
 				else {
