@@ -14,16 +14,16 @@ var cio = function (user, key) {
 			}}, function (err, httpResponse, body) {
 				if (err) throw err;
 				if (JSON.parse(body).status == "success") {
-					this.nick = JSON.parse(body).nick;
-					callback(false, this.nick);					
+					this.setNick(JSON.parse(body).nick);
+					callback(false, this.nick);
 				}
 				else if (JSON.parse(body).status == "Error: reference name already exists") {
-					callback(false, this.nick);					
+					callback(false, this.nick);
 				}
 				else {
 					throw JSON.parse(body).status;
 				}
-			});
+			}.bind(this));
 	}
 
 	this.ask = function (input, callback) {
