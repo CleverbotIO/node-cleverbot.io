@@ -13,15 +13,22 @@ var cio = function (user, key) {
 				nick: this.nick
 			}}, function (err, httpResponse, body) {
 				if (err) throw err;
-				if (JSON.parse(body).status == "success") {
+				try {
+					var status = JSON.parse(body).status;
+				}
+				catch (e) {
+					console.log(e.stack);
+					var status="API endpoints unreachable";
+				}
+				if (status == "success") {
 					this.setNick(JSON.parse(body).nick);
 					callback(false, this.nick);
 				}
-				else if (JSON.parse(body).status == "Error: reference name already exists") {
+				else if (status == "Error: reference name already exists") {
 					callback(false, this.nick);
 				}
 				else {
-					throw JSON.parse(body).status;
+					callback(status, null);
 				}
 			}.bind(this));
 	}
