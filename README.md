@@ -3,6 +3,7 @@
 [![npm status](http://img.shields.io/npm/v/cleverbot.io.svg)](https://www.npmjs.org/package/cleverbot.io)
 [![build status](https://secure.travis-ci.org/CleverbotIO/node-cleverbot.io.svg)](http://travis-ci.org/CleverbotIO/node-cleverbot.io)
 [![dependency status](https://david-dm.org/CleverbotIO/node-cleverbot.io.svg)](https://david-dm.org/CleverbotIO/node-cleverbot.io)
+[![Slack Status](https://slack.cleverbot.io/badge.svg)](https://slack.cleverbot.io)
 
 ### Installation
 
