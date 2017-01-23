@@ -33,21 +33,15 @@ var cio = function (user, key) {
 			}.bind(this));
 	}
 
-	this.ask = function (input, callback) {
-		request.post({ url: base_url + "ask", form: {
-				user: this.user,
-				key: this.key,
-				nick: this.nick,
-				text: input
-			}}, function (err, httpResponse, body) {
-				if (err) throw err;
-				if (JSON.parse(body).status == "success") {
-					callback(false, JSON.parse(body).response);
-				}
-				else {
-					callback(true, JSON.parse(body).status);
-				}
-			});
+	     this.ask = function (input, callback) {
+        request.post({ url: base_url + "ask", form: {
+                user: this.user,
+                key: this.key,
+                nick: this.nick,
+                text: input
+            }}, function (err, httpResponse, body) {
+                 callback(err, body && JSON.parse(body), httpResponse)
+            });
 	}
 }
 module.exports = cio;
