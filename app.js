@@ -41,11 +41,18 @@ var cio = function (user, key) {
 				text: input
 			}}, function (err, httpResponse, body) {
 				if (err) throw err;
-				if (JSON.parse(body).status == "success") {
-					callback(false, JSON.parse(body).response);
+				try
+				{
+					if (JSON.parse(body).status == "success") {
+						callback(false, JSON.parse(body).response);
+					}
+					else {
+						callback(true, JSON.parse(body).status);
+					}
 				}
-				else {
-					callback(true, JSON.parse(body).status);
+				catch(e)
+				{
+					console.log(e);
 				}
 			});
 	}
