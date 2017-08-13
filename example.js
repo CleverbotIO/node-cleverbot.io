@@ -4,7 +4,7 @@ var rl = readline.createInterface(process.stdin, process.stdout);
 bot = new cleverbot("YOUR_API_USER", "YOUR_API_KEY"); // cleverbot (user, key, nick)
 
 bot.setNick("YOUR_NICK"); // This is optional
-bot.create(function (err, response) {
+bot.create(function (err, session) {
 	rl.setPrompt('You> ');
 	rl.prompt();
 	rl.on('line', function(line) {
